@@ -1,0 +1,177 @@
+/* Dashboard.css */
+
+.dashboard {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .banner-carousel {
+    margin: 40px  0px;
+    position: relative;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    background-image: url("./pattern.png");
+  }
+  .banner-carousel .banner.banner-0 {
+    background-color: #9188f8b9;
+  }
+  
+  .banner-carousel .banner.banner-1 {
+    background-color: rgba(0, 128, 0, 0.737);
+  }
+  
+  .banner-carousel .banner.banner-2 {
+    background-color: #f56eb4d1;
+  }
+  
+  .banner-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .banner-content button a{
+    text-decoration:none;
+    color: black;
+   
+  }
+  .banner-content button{
+text-decoration:none;
+outline: none;
+border: none;
+text-decoration: none;
+padding:8px 15px;
+background-color: white;
+color: black; 
+font-family: poppins,sans-serif;
+font-size: 16px;
+border-radius: 5px;
+margin-top: 20px;
+font-weight: 600;
+  }
+  
+  .section {
+    padding: 0px 80px;
+    margin-bottom: 30px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set 3 columns with equal width */
+    grid-gap: 20px;
+  }
+  
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #fff;
+    position: relative; 
+  }
+  
+  .progress-inner {
+    position: relative; 
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .card ul {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    margin-bottom: 5px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .card button
+   {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2489D3;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .card button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card button:hover
+  {
+    background-color: #2980b9;
+  }
+  
+  .button {
+    cursor: pointer;
+  }
+  
+  .showButton{
+    display: block;
+    background-color: transparent;
+    margin: 20px auto;
+    padding: 8px 15px;
+    border: 2px solid #2489D3 ;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #2489D3;
+  }
+  
+ 
+  @media only screen and (max-width: 1200px) {
+     
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    
+  }
+  .section {
+    padding: 0px 0px;
+  }
+  }
